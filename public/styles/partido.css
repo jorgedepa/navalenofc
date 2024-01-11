@@ -1,0 +1,118 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+    background: #203a2f;
+    background: linear-gradient(180deg, #203a2f 8%, #008f4c 83%);
+
+}
+
+#contenedorPartido {
+    width: 100%;
+    height: 250px;
+    padding: 50px 200px;
+    background-color: #1a1f2c;
+    margin-bottom: 20px;
+}
+
+#divPartido {
+    width: 100%;
+    height: 100%;
+    display: grid;
+    grid-template-columns: 3fr 2fr 2fr 2fr 2fr 2fr 3fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+#divPartido>div {
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#nombreEquipoLocal,
+#nombreEquipoVisitante {
+    font-weight: bolder;
+    font-size: 24px;
+}
+
+#resultadoLocal,
+#resultadoVisitante {
+    font-weight: bolder;
+    font-size: 60px;
+}
+
+#divPartido div img {
+    max-width: 80%;
+}
+
+#contenedorEstado div {
+    font-size: 14px;
+
+    color: black;
+    background-color: #dee5fd;
+    padding: 5px;
+    border-radius: 3px;
+
+}
+
+
+#mapa {
+    margin-bottom: 20px;
+    display: grid;
+    grid-template-columns: 1fr 800px 1fr;
+    grid-template-rows: 1fr;
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}
+
+#mapa>div {
+    padding: 0px 20px;
+}
+
+#mapa table {
+    width: 100%;
+    text-align: center;
+    border-collapse: collapse;
+    background-color: white;
+}
+
+#mapa tr:first-child {
+    background-color: #1a1f2c;
+    color: white;
+    height: 50px;
+    font-size: 29px;
+}
+
+
+body>table {
+    margin: 0 auto;
+    text-align: center;
+    border-collapse: collapse;
+    width: 800px;
+    font-size: 16px;
+    padding: 15px;
+    background-color: white;
+}
+
+#resumen th {
+    padding: 15px;
+    font-size: 18px;
+    background-color: #1a1f2c;
+    color: white;
+}
+
+
+th,
+td {
+    border-bottom: 1px solid #ddd;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}

@@ -1,0 +1,714 @@
+INFO - 2024-01-03 08:11:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 08:11:09 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' null,null,null, null,null,null)' at line 2 in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO fic...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO fic...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO fic...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(270): CodeIgniter\Database\BaseConnection->query('INSERT INTO fic...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(314): App\Models\MiModelo->insertarRegistro(NULL, 'null', 'null', 'null', 'null', 'null', 'null')
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->actualizar()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-03 08:11:09 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near ' null,null,null, null,null,null)' at line 2
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(270): CodeIgniter\Database\BaseConnection->query('INSERT INTO fichaje (id_usuario, FechaEntrada, FechaSalida, InicioPausa, FinPausa, TipoSalida, Estado) VALUES
+        (, null,null,null, null,null,null)')
+ 2 APPPATH\Controllers\Home.php(314): App\Models\MiModelo->insertarRegistro(null, 'null', 'null', 'null', 'null', 'null', 'null')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 08:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 08:11:23 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND DATE(FechaEntrada) BETWEEN '' AND ''' at line 1 in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM f...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM f...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM f...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(227): CodeIgniter\Database\BaseConnection->query('SELECT * FROM f...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(316): App\Models\MiModelo->fichajesDia(NULL, NULL, NULL)
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->actualizar()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-03 08:11:23 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND DATE(FechaEntrada) BETWEEN '' AND ''' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(227): CodeIgniter\Database\BaseConnection->query('SELECT * FROM fichaje WHERE id_usuario =  AND DATE(FechaEntrada) BETWEEN \'\' AND \'\';')
+ 2 APPPATH\Controllers\Home.php(316): App\Models\MiModelo->fichajesDia(null, null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 08:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 08:11:30 --> Undefined variable $nombreUsuario
+in APPPATH\Views\crud.php on line 31.
+ 1 APPPATH\Views\crud.php(31): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nombreUsuario', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\crud.php', 31)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\crud.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('crud', [], true)
+ 5 APPPATH\Controllers\Home.php(233): view('crud', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->crud()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 08:11:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:11:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:11:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:11:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:12:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-03 08:12:05 --> [DEPRECATED] urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\responsable.php on line 41.
+ 1 APPPATH\Views\responsable.php(41): urlencode(null)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\responsable.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('responsable', [], true)
+ 5 APPPATH\Controllers\Home.php(128): view('responsable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->entrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-03 08:12:05 --> [DEPRECATED] urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\responsable.php on line 41.
+ 1 APPPATH\Views\responsable.php(41): urlencode(null)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\responsable.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('responsable', [], true)
+ 5 APPPATH\Controllers\Home.php(128): view('responsable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->entrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 08:12:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:12:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:12:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:12:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:12:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:12:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:12:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:12:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:12:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:12:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:12:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:12:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:12:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:13:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:13:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:13:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:13:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:13:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:13:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:13:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:13:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:13:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:13:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:23:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:23:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 08:23:23 --> Undefined array key "descripcion"
+in APPPATH\Views\ausencia.php on line 63.
+ 1 APPPATH\Views\ausencia.php(63): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "descripcion"', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php', 63)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('ausencia', [], true)
+ 5 APPPATH\Controllers\Home.php(326): view('ausencia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->ausencia()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 08:24:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:24:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:24:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:24:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:24:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:45:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:45:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:45:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:45:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:45:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:46:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:46:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:49:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 08:49:52 --> Undefined variable $nombreEmpleado
+in APPPATH\Views\ausencia.php on line 47.
+ 1 APPPATH\Views\ausencia.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nombreEmpleado', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php', 47)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('ausencia', [], true)
+ 5 APPPATH\Controllers\Home.php(327): view('ausencia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->ausencia()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 08:49:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:49:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 08:49:55 --> Undefined variable $nombreEmpleado
+in APPPATH\Views\ausencia.php on line 47.
+ 1 APPPATH\Views\ausencia.php(47): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $nombreEmpleado', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php', 47)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('ausencia', [], true)
+ 5 APPPATH\Controllers\Home.php(327): view('ausencia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->ausencia()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 08:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:50:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 08:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:04:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:04:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:04:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:05:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:05:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:11:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:12:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:12:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:12:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:12:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:12:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:13:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:13:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:13:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:14:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 09:14:04 --> App\Controllers\Home::ausencia(): Return value must be of type array, null returned
+in APPPATH\Controllers\Home.php on line 327.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->ausencia()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:14:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 09:14:32 --> App\Controllers\Home::ausencia(): Return value must be of type string, null returned
+in APPPATH\Controllers\Home.php on line 327.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->ausencia()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:14:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 09:14:32 --> App\Controllers\Home::ausencia(): Return value must be of type string, null returned
+in APPPATH\Controllers\Home.php on line 327.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->ausencia()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:15:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:18:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 09:18:44 --> Undefined array key "comnentario"
+in APPPATH\Views\ausencia.php on line 106.
+ 1 APPPATH\Views\ausencia.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "comnentario"', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php', 106)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('ausencia', [], true)
+ 5 APPPATH\Controllers\Home.php(327): view('ausencia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->ausencia()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:19:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:31:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:47:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:47:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:47:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:47:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:47:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:47:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:47:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:48:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 09:48:03 --> Undefined array key "comnentario"
+in APPPATH\Views\ausencia.php on line 106.
+ 1 APPPATH\Views\ausencia.php(106): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "comnentario"', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php', 106)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('ausencia', [], true)
+ 5 APPPATH\Controllers\Home.php(327): view('ausencia', [...])
+ 6 APPPATH\Controllers\Home.php(351): App\Controllers\Home->ausencia()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:48:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 09:48:38 --> Undefined array key "Comentario"
+in APPPATH\Views\ausencia.php on line 105.
+ 1 APPPATH\Views\ausencia.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Comentario"', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php', 105)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('ausencia', [], true)
+ 5 APPPATH\Controllers\Home.php(327): view('ausencia', [...])
+ 6 APPPATH\Controllers\Home.php(351): App\Controllers\Home->ausencia()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:48:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 09:48:43 --> Undefined array key "Comentario"
+in APPPATH\Views\ausencia.php on line 105.
+ 1 APPPATH\Views\ausencia.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Comentario"', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php', 105)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('ausencia', [], true)
+ 5 APPPATH\Controllers\Home.php(327): view('ausencia', [...])
+ 6 APPPATH\Controllers\Home.php(351): App\Controllers\Home->ausencia()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 09:49:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:49:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:50:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:50:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 09:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 09:59:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE permisos...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE permisos...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE permisos...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(289): CodeIgniter\Database\BaseConnection->query('UPDATE permisos...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(337): App\Models\MiModelo->actualizarTipoAusencia(NULL, '6')
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-03 09:59:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(289): CodeIgniter\Database\BaseConnection->query('UPDATE permisos SET TipoPermiso = \'6\' WHERE DiaEspecialId = ;')
+ 2 APPPATH\Controllers\Home.php(337): App\Models\MiModelo->actualizarTipoAusencia(null, '6')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 10:00:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 10:00:32 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE permisos...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE permisos...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE permisos...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(289): CodeIgniter\Database\BaseConnection->query('UPDATE permisos...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(337): App\Models\MiModelo->actualizarTipoAusencia(NULL, '6')
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-03 10:00:32 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(289): CodeIgniter\Database\BaseConnection->query('UPDATE permisos SET TipoPermiso = \'6\' WHERE DiaEspecialId = ;')
+ 2 APPPATH\Controllers\Home.php(337): App\Models\MiModelo->actualizarTipoAusencia(null, '6')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 10:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 10:00:33 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE permisos...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE permisos...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE permisos...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(289): CodeIgniter\Database\BaseConnection->query('UPDATE permisos...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(337): App\Models\MiModelo->actualizarTipoAusencia(NULL, '6')
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-03 10:00:33 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(289): CodeIgniter\Database\BaseConnection->query('UPDATE permisos SET TipoPermiso = \'6\' WHERE DiaEspecialId = ;')
+ 2 APPPATH\Controllers\Home.php(337): App\Models\MiModelo->actualizarTipoAusencia(null, '6')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 10:00:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 10:00:56 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(838): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Home.php(381): CodeIgniter\Model->__get('insertarRegistroAusencia')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 10:01:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:01:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 10:01:11 --> You must set the database table to be used with your query.
+in SYSTEMPATH\Database\BaseConnection.php on line 884.
+ 1 SYSTEMPATH\Model.php(635): CodeIgniter\Database\BaseConnection->table(null)
+ 2 SYSTEMPATH\Model.php(838): CodeIgniter\Model->builder()
+ 3 APPPATH\Controllers\Home.php(381): CodeIgniter\Model->__get('insertarRegistroAusencia')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 10:02:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 10:02:20 --> App\Controllers\Home::actualizarAusencia(): Return value must be of type string, null returned
+in APPPATH\Controllers\Home.php on line 380.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 10:02:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:03:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:04:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 10:04:46 --> mysqli_sql_exception: Column 'TipoPermiso' cannot be null in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO per...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO per...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO per...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(319): CodeIgniter\Database\BaseConnection->query('INSERT INTO per...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(379): App\Models\MiModelo->insertarRegistroAusencia('null', 'null', 'null', '2', 'null')
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-03 10:04:46 --> Column 'TipoPermiso' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(319): CodeIgniter\Database\BaseConnection->query('INSERT INTO permisos (TipoPermiso, FechaInicio, FechaFin, id_usuario, comentario) VALUES
+    (null, null,null,2, null)')
+ 2 APPPATH\Controllers\Home.php(379): App\Models\MiModelo->insertarRegistroAusencia('null', 'null', 'null', '2', 'null')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 10:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:05:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:05:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 10:05:35 --> mysqli_sql_exception: Column 'TipoPermiso' cannot be null in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO per...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO per...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO per...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(319): CodeIgniter\Database\BaseConnection->query('INSERT INTO per...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(379): App\Models\MiModelo->insertarRegistroAusencia('null', 'null', 'null', '2', 'null')
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-03 10:05:35 --> Column 'TipoPermiso' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(319): CodeIgniter\Database\BaseConnection->query('INSERT INTO permisos (TipoPermiso, FechaInicio, FechaFin, id_usuario, comentario) VALUES
+    (null, null,null,2, null)')
+ 2 APPPATH\Controllers\Home.php(379): App\Models\MiModelo->insertarRegistroAusencia('null', 'null', 'null', '2', 'null')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 10:05:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:05:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:05:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:05:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:07:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 10:07:56 --> Undefined array key " empleado"
+in APPPATH\Views\ausencia.php on line 147.
+ 1 APPPATH\Views\ausencia.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key " empleado"', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php', 147)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('ausencia', [], true)
+ 5 APPPATH\Controllers\Home.php(327): view('ausencia', [...])
+ 6 APPPATH\Controllers\Home.php(382): App\Controllers\Home->ausencia()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 10:08:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 10:08:04 --> Undefined array key " empleado"
+in APPPATH\Views\ausencia.php on line 147.
+ 1 APPPATH\Views\ausencia.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key " empleado"', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php', 147)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('ausencia', [], true)
+ 5 APPPATH\Controllers\Home.php(327): view('ausencia', [...])
+ 6 APPPATH\Controllers\Home.php(382): App\Controllers\Home->ausencia()
+ 7 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+ 8 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 10:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 10:08:05 --> Undefined array key " empleado"
+in APPPATH\Views\ausencia.php on line 147.
+ 1 APPPATH\Views\ausencia.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key " empleado"', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php', 147)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('ausencia', [], true)
+ 5 APPPATH\Controllers\Home.php(327): view('ausencia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->ausencia()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 10:08:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:08:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:08:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-03 10:08:08 --> Undefined array key " empleado"
+in APPPATH\Views\ausencia.php on line 147.
+ 1 APPPATH\Views\ausencia.php(147): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key " empleado"', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php', 147)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\ausencia.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('ausencia', [], true)
+ 5 APPPATH\Controllers\Home.php(327): view('ausencia', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->ausencia()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 10:08:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:09:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:09:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:09:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:09:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:09:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:09:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:09:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:09:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 10:09:17 --> mysqli_sql_exception: Column 'TipoPermiso' cannot be null in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO per...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO per...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO per...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(319): CodeIgniter\Database\BaseConnection->query('INSERT INTO per...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(379): App\Models\MiModelo->insertarRegistroAusencia('null', 'null', 'null', '2', 'null')
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-03 10:09:17 --> Column 'TipoPermiso' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(319): CodeIgniter\Database\BaseConnection->query('INSERT INTO permisos (TipoPermiso, FechaInicio, FechaFin, id_usuario, comentario) VALUES
+    (null, null,null,2, null)')
+ 2 APPPATH\Controllers\Home.php(379): App\Models\MiModelo->insertarRegistroAusencia('null', 'null', 'null', '2', 'null')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 10:09:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:09:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:09:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:09:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:09:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:09:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:09:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:09:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:10:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-03 10:10:00 --> mysqli_sql_exception: Column 'TipoPermiso' cannot be null in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO per...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO per...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO per...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(319): CodeIgniter\Database\BaseConnection->query('INSERT INTO per...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(379): App\Models\MiModelo->insertarRegistroAusencia('null', 'null', 'null', '2', 'null')
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-03 10:10:00 --> Column 'TipoPermiso' cannot be null
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(319): CodeIgniter\Database\BaseConnection->query('INSERT INTO permisos (TipoPermiso, FechaInicio, FechaFin, id_usuario, comentario) VALUES
+    (null, null,null,2, null)')
+ 2 APPPATH\Controllers\Home.php(379): App\Models\MiModelo->insertarRegistroAusencia('null', 'null', 'null', '2', 'null')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAusencia()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 10:10:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:10:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:11:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:12:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:12:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:12:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:12:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:12:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:14:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:14:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:14:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:14:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:14:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:14:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:14:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:14:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:16:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:16:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:16:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:16:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:16:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:16:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-03 10:16:36 --> [DEPRECATED] urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\responsable.php on line 41.
+ 1 APPPATH\Views\responsable.php(41): urlencode(null)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\responsable.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('responsable', [], true)
+ 5 APPPATH\Controllers\Home.php(128): view('responsable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->entrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-03 10:16:36 --> [DEPRECATED] urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\responsable.php on line 41.
+ 1 APPPATH\Views\responsable.php(41): urlencode(null)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\responsable.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('responsable', [], true)
+ 5 APPPATH\Controllers\Home.php(128): view('responsable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->entrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-03 10:16:36 --> [DEPRECATED] urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\responsable.php on line 70.
+ 1 APPPATH\Views\responsable.php(70): urlencode(null)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\responsable.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('responsable', [], true)
+ 5 APPPATH\Controllers\Home.php(128): view('responsable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->entrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-03 10:16:36 --> [DEPRECATED] urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\responsable.php on line 70.
+ 1 APPPATH\Views\responsable.php(70): urlencode(null)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\responsable.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('responsable', [], true)
+ 5 APPPATH\Controllers\Home.php(128): view('responsable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->entrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-03 10:16:36 --> [DEPRECATED] urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\responsable.php on line 70.
+ 1 APPPATH\Views\responsable.php(70): urlencode(null)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\responsable.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('responsable', [], true)
+ 5 APPPATH\Controllers\Home.php(128): view('responsable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->entrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-03 10:16:36 --> [DEPRECATED] urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\responsable.php on line 70.
+ 1 APPPATH\Views\responsable.php(70): urlencode(null)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\responsable.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('responsable', [], true)
+ 5 APPPATH\Controllers\Home.php(128): view('responsable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->entrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 10:16:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:16:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:17:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:17:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:18:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:18:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:18:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:18:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:18:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:18:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-03 10:18:27 --> [DEPRECATED] urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\responsable.php on line 41.
+ 1 APPPATH\Views\responsable.php(41): urlencode(null)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\responsable.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('responsable', [], true)
+ 5 APPPATH\Controllers\Home.php(128): view('responsable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->entrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-03 10:18:27 --> [DEPRECATED] urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\responsable.php on line 41.
+ 1 APPPATH\Views\responsable.php(41): urlencode(null)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\responsable.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('responsable', [], true)
+ 5 APPPATH\Controllers\Home.php(128): view('responsable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->entrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-03 10:18:27 --> [DEPRECATED] urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\responsable.php on line 70.
+ 1 APPPATH\Views\responsable.php(70): urlencode(null)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\responsable.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('responsable', [], true)
+ 5 APPPATH\Controllers\Home.php(128): view('responsable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->entrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-03 10:18:27 --> [DEPRECATED] urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\responsable.php on line 70.
+ 1 APPPATH\Views\responsable.php(70): urlencode(null)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\responsable.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('responsable', [], true)
+ 5 APPPATH\Controllers\Home.php(128): view('responsable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->entrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-03 10:18:27 --> [DEPRECATED] urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\responsable.php on line 70.
+ 1 APPPATH\Views\responsable.php(70): urlencode(null)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\responsable.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('responsable', [], true)
+ 5 APPPATH\Controllers\Home.php(128): view('responsable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->entrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-03 10:18:27 --> [DEPRECATED] urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\responsable.php on line 70.
+ 1 APPPATH\Views\responsable.php(70): urlencode(null)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\responsable.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('responsable', [], true)
+ 5 APPPATH\Controllers\Home.php(128): view('responsable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->entrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-03 10:18:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:18:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:18:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:18:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:19:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:19:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:19:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-03 10:19:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

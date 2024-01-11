@@ -1,0 +1,157 @@
+* {
+    box-sizing: content-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+    display: grid;
+    grid-template-columns: minmax(150px, 1fr) 8fr;
+    grid-template-rows: 96px 8fr;
+}
+
+header {
+    grid-column: 1 / 3;
+
+    background-color: #005a32;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+#logo,
+#inicioSesion {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 600px;
+    justify-content: flex-start;
+}
+
+#logo img {
+    height: 80%;
+    margin-right: 20px;
+}
+
+#logo h2 {
+    font-size: 22px;
+    color: #fff;
+}
+
+#inicioSesion {
+    width: 400px;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#inicioSesion span {
+    color: white;
+    font-size: 18px;
+
+}
+
+#inicioSesion button {
+    cursor: pointer;
+    width: 216px;
+    height: 34px;
+    background: linear-gradient(to right, #e67e22, #d35400);
+    color: white;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+aside {
+    background-color: #0b3d27;
+    grid-row: 2 / 3;
+}
+
+aside ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+aside li {
+    padding: 10px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    border-bottom: 1px solid #00361e;
+
+}
+
+aside li:hover {
+    background-color: #008f4c;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    color: inherit;
+}
+
+main {
+    background-color: #cccccc;
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-direction: column;
+}
+
+main fieldset {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    border-collapse: collapse;
+    text-align: center;
+    width: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+
+}
+
+fieldset table {
+    width: 100%;
+}
+
+main>table {
+    margin-bottom: 20px;
+}
+
+th {
+    background-color: #0b3d27;
+    color: white;
+    height: 30px;
+}
+
+tr {
+    height: 30px;
+
+}
+
+tr:nth-child(even) {
+    background: white;
+}
+
+tr:nth-child(odd) {
+    background: #edfff6
+}

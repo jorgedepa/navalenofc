@@ -1,0 +1,332 @@
+INFO - 2023-12-30 11:27:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:27:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:27:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:30:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 11:30:52 --> mysqli_sql_exception: Column 'id_usuario' in field list is ambiguous in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT id_usuar...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT id_usuar...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT id_usuar...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(221): CodeIgniter\Database\BaseConnection->query('SELECT id_usuar...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(127): App\Models\MiModelo->empleadosFecha('2023-12-30', '2023-12-30')
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->entrar()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-30 11:30:52 --> Column 'id_usuario' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(221): CodeIgniter\Database\BaseConnection->query('SELECT id_usuario, nombre_usuario, calcular_horas_justificadas(id_usuario, \'2023-12-30\', \'2023-12-30\') AS horas_justificadas, calcular_horas_no_justificadas(id_usuario, \'2023-12-30\', \'2023-12-30\') AS horas_no_justificadas, erroresFichajes(id_usuario, \'2023-12-30\', \'2023-12-30\') AS errores, obtenerPermisos(id_usuario, \'2023-12-30\', \'2023-12-30\') AS permisos FROM usuarios u INNER JOIN fichaje f ON u.id_usuario = f.id_usuario WHERE u.rol = \'trabajador\' AND f.FechaEntrada BETWEEN \'2023-12-30\' AND \'2023-12-30\';')
+ 2 APPPATH\Controllers\Home.php(127): App\Models\MiModelo->empleadosFecha('2023-12-30', '2023-12-30')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->entrar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 11:32:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:33:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2023-12-30 11:33:30 --> mysqli_sql_exception: Column 'id_usuario' in field list is ambiguous in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT u.id_usu...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT u.id_usu...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT u.id_usu...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(221): CodeIgniter\Database\BaseConnection->query('SELECT u.id_usu...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(127): App\Models\MiModelo->empleadosFecha('2023-12-30', '2023-12-30')
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->entrar()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-30 11:33:30 --> Column 'id_usuario' in field list is ambiguous
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(221): CodeIgniter\Database\BaseConnection->query('SELECT u.id_usuario, u.nombre_usuario, calcular_horas_justificadas(id_usuario, \'2023-12-30\', \'2023-12-30\') AS horas_justificadas, calcular_horas_no_justificadas(id_usuario, \'2023-12-30\', \'2023-12-30\') AS horas_no_justificadas, erroresFichajes(id_usuario, \'2023-12-30\', \'2023-12-30\') AS errores, obtenerPermisos(id_usuario, \'2023-12-30\', \'2023-12-30\') AS permisos FROM usuarios u INNER JOIN fichaje f ON u.id_usuario = f.id_usuario WHERE u.rol = \'trabajador\' AND f.FechaEntrada BETWEEN \'2023-12-30\' AND \'2023-12-30\';')
+ 2 APPPATH\Controllers\Home.php(127): App\Models\MiModelo->empleadosFecha('2023-12-30', '2023-12-30')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->entrar()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 11:35:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:35:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:35:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:38:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:38:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:42:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:42:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:42:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:45:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:45:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:45:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:45:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:45:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:46:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:46:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:46:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:51:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:51:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:51:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:55:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:55:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:55:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:55:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:55:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:56:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:56:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:56:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:56:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:56:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:56:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:56:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:56:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:56:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:56:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:57:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:57:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:57:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:57:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:57:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:57:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:57:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:57:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:57:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:57:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:58:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 11:59:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 12:00:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 12:00:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 12:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 12:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 12:03:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 12:03:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 12:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 12:05:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-30 12:05:40 --> Invalid file: "crude.php"
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 39.
+ 1 SYSTEMPATH\View\View.php(216): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('crude.php')
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('crude', [], true)
+ 3 APPPATH\Controllers\Home.php(232): view('crude', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->rangoFechasCrud()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 12:05:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 12:05:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 12:06:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 12:06:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 12:06:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 12:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:00:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:00:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:00:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:12:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-30 13:12:22 --> Undefined variable $fichajesDia
+in APPPATH\Views\crud.php on line 66.
+ 1 APPPATH\Views\crud.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fichajesDia', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\crud.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\crud.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('crud', [], true)
+ 5 APPPATH\Controllers\Home.php(224): view('crud', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->crud()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 13:12:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:12:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:12:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:12:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:12:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-30 13:12:54 --> Undefined variable $fichajesDia
+in APPPATH\Views\crud.php on line 66.
+ 1 APPPATH\Views\crud.php(66): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $fichajesDia', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\crud.php', 66)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\crud.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('crud', [], true)
+ 5 APPPATH\Controllers\Home.php(224): view('crud', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->crud()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-30 13:15:19 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND DATE(FechaEntrada) BETWEEN '2023-12-05' AND '2023-12-30'' at line 1 in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM f...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM f...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM f...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(227): CodeIgniter\Database\BaseConnection->query('SELECT * FROM f...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(225): App\Models\MiModelo->fichajesDia(NULL, '2023-12-05', '2023-12-30')
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->crud()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-30 13:15:19 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND DATE(FechaEntrada) BETWEEN '2023-12-05' AND '2023-12-30'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(227): CodeIgniter\Database\BaseConnection->query('SELECT * FROM fichaje WHERE id_usuario =  AND DATE(FechaEntrada) BETWEEN \'2023-12-05\' AND \'2023-12-30\';')
+ 2 APPPATH\Controllers\Home.php(225): App\Models\MiModelo->fichajesDia(null, '2023-12-05', '2023-12-30')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->crud()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-30 13:15:20 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND DATE(FechaEntrada) BETWEEN '2023-12-05' AND '2023-12-30'' at line 1 in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM f...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM f...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM f...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(227): CodeIgniter\Database\BaseConnection->query('SELECT * FROM f...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(225): App\Models\MiModelo->fichajesDia(NULL, '2023-12-05', '2023-12-30')
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->crud()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-30 13:15:20 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND DATE(FechaEntrada) BETWEEN '2023-12-05' AND '2023-12-30'' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(227): CodeIgniter\Database\BaseConnection->query('SELECT * FROM fichaje WHERE id_usuario =  AND DATE(FechaEntrada) BETWEEN \'2023-12-05\' AND \'2023-12-30\';')
+ 2 APPPATH\Controllers\Home.php(225): App\Models\MiModelo->fichajesDia(null, '2023-12-05', '2023-12-30')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->crud()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-30 13:16:00 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND DATE(FechaEntrada) BETWEEN '2023-12-05' AND '2023-12-30' at line 1 in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM f...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM f...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM f...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(227): CodeIgniter\Database\BaseConnection->query('SELECT * FROM f...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(225): App\Models\MiModelo->fichajesDia(NULL, '2023-12-05', '2023-12-30')
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->crud()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-30 13:16:00 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND DATE(FechaEntrada) BETWEEN '2023-12-05' AND '2023-12-30' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(227): CodeIgniter\Database\BaseConnection->query('SELECT * FROM fichaje WHERE id_usuario =  AND DATE(FechaEntrada) BETWEEN \'2023-12-05\' AND \'2023-12-30;')
+ 2 APPPATH\Controllers\Home.php(225): App\Models\MiModelo->fichajesDia(null, '2023-12-05', '2023-12-30')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->crud()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-30 13:16:01 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND DATE(FechaEntrada) BETWEEN '2023-12-05' AND '2023-12-30' at line 1 in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM f...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM f...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM f...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(227): CodeIgniter\Database\BaseConnection->query('SELECT * FROM f...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(225): App\Models\MiModelo->fichajesDia(NULL, '2023-12-05', '2023-12-30')
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->crud()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-30 13:16:01 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND DATE(FechaEntrada) BETWEEN '2023-12-05' AND '2023-12-30' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(227): CodeIgniter\Database\BaseConnection->query('SELECT * FROM fichaje WHERE id_usuario =  AND DATE(FechaEntrada) BETWEEN \'2023-12-05\' AND \'2023-12-30;')
+ 2 APPPATH\Controllers\Home.php(225): App\Models\MiModelo->fichajesDia(null, '2023-12-05', '2023-12-30')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->crud()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-30 13:16:02 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND DATE(FechaEntrada) BETWEEN '2023-12-05' AND '2023-12-30' at line 1 in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM f...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM f...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM f...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(227): CodeIgniter\Database\BaseConnection->query('SELECT * FROM f...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(225): App\Models\MiModelo->fichajesDia(NULL, '2023-12-05', '2023-12-30')
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->crud()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-30 13:16:02 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND DATE(FechaEntrada) BETWEEN '2023-12-05' AND '2023-12-30' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(227): CodeIgniter\Database\BaseConnection->query('SELECT * FROM fichaje WHERE id_usuario =  AND DATE(FechaEntrada) BETWEEN \'2023-12-05\' AND \'2023-12-30;')
+ 2 APPPATH\Controllers\Home.php(225): App\Models\MiModelo->fichajesDia(null, '2023-12-05', '2023-12-30')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->crud()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-30 13:16:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND DATE(FechaEntrada) BETWEEN '2023-12-05' AND '2023-12-30' at line 1 in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM f...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM f...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM f...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(227): CodeIgniter\Database\BaseConnection->query('SELECT * FROM f...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(225): App\Models\MiModelo->fichajesDia(NULL, '2023-12-05', '2023-12-30')
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->crud()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-30 13:16:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND DATE(FechaEntrada) BETWEEN '2023-12-05' AND '2023-12-30' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(227): CodeIgniter\Database\BaseConnection->query('SELECT * FROM fichaje WHERE id_usuario =  AND DATE(FechaEntrada) BETWEEN \'2023-12-05\' AND \'2023-12-30;')
+ 2 APPPATH\Controllers\Home.php(225): App\Models\MiModelo->fichajesDia(null, '2023-12-05', '2023-12-30')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->crud()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2023-12-30 13:16:03 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND DATE(FechaEntrada) BETWEEN '2023-12-05' AND '2023-12-30' at line 1 in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT * FROM f...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT * FROM f...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT * FROM f...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(227): CodeIgniter\Database\BaseConnection->query('SELECT * FROM f...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(225): App\Models\MiModelo->fichajesDia(NULL, '2023-12-05', '2023-12-30')
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->crud()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2023-12-30 13:16:03 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND DATE(FechaEntrada) BETWEEN '2023-12-05' AND '2023-12-30' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(227): CodeIgniter\Database\BaseConnection->query('SELECT * FROM fichaje WHERE id_usuario =  AND DATE(FechaEntrada) BETWEEN \'2023-12-05\' AND \'2023-12-30;')
+ 2 APPPATH\Controllers\Home.php(225): App\Models\MiModelo->fichajesDia(null, '2023-12-05', '2023-12-30')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->crud()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-30 13:21:24 --> App\Controllers\Home::crud(): Return value must be of type string, null returned
+in APPPATH\Controllers\Home.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->crud()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2023-12-30 13:21:25 --> App\Controllers\Home::crud(): Return value must be of type string, null returned
+in APPPATH\Controllers\Home.php on line 227.
+ 1 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->crud()
+ 2 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 3 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 13:33:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2023-12-30 13:33:04 --> Undefined variable $clave
+in APPPATH\Views\crud.php on line 120.
+ 1 APPPATH\Views\crud.php(120): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $clave', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\crud.php', 120)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\crud.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('crud', [], true)
+ 5 APPPATH\Controllers\Home.php(226): view('crud', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->crud()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2023-12-30 13:33:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:36:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:37:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:37:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:37:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:37:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:39:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:39:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:39:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:39:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:39:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:39:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2023-12-30 13:39:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

@@ -1,0 +1,30 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+    background: #203a2f;
+    background: linear-gradient(180deg, #203a2f 8%, #008f4c 83%);
+
+}
+
+#contenedorIframe {
+    margin-top: 20px;
+    width: 100%;
+    height: 720px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedorIframe h1 {
+    color: white;
+}
+
+iframe {
+    height: 720px;
+    width: 1280px;
+    border: none;
+}

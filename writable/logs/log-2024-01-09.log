@@ -1,0 +1,513 @@
+INFO - 2024-01-09 10:58:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 10:59:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 10:59:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 10:59:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 10:59:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 10:59:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 10:59:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 10:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 10:59:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 10:59:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 10:59:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:00:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:02:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:03:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:03:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:03:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:03:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:03:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:03:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:03:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:03:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:03:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:04:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:04:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:04:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:04:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:04:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:04:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:04:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:05:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:05:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:05:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:05:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:06:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:06:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+WARNING - 2024-01-09 11:06:15 --> [DEPRECATED] urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\responsable.php on line 68.
+ 1 APPPATH\Views\responsable.php(68): urlencode(null)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\responsable.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('responsable', [], true)
+ 5 APPPATH\Controllers\Home.php(128): view('responsable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->entrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+WARNING - 2024-01-09 11:06:15 --> [DEPRECATED] urlencode(): Passing null to parameter #1 ($string) of type string is deprecated in APPPATH\Views\responsable.php on line 68.
+ 1 APPPATH\Views\responsable.php(68): urlencode(null)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\responsable.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('responsable', [], true)
+ 5 APPPATH\Controllers\Home.php(128): view('responsable', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->entrar()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-09 11:06:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:06:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:06:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:06:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:06:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:06:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:07:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:07:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:07:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:07:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:07:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:07:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:09:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 11:14:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 16:33:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 16:34:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 16:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 16:34:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 16:38:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:07:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:07:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:09:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:20:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:21:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:24:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:24:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:24:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:24:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:24:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:25:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:25:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-09 17:28:03 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 559.
+ 1 APPPATH\Controllers\Home.php(559): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Controllers\\Home.php', 559)
+ 2 APPPATH\Controllers\Home.php(573): App\Controllers\Home->enfrentamiento()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-09 17:28:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-09 17:31:21 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND j.equipo_id = e.equipo_local_id' at line 1 in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('SELECT a.id_jug...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('SELECT a.id_jug...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT a.id_jug...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(80): CodeIgniter\Database\BaseConnection->query('SELECT a.id_jug...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(575): App\Models\MiModelo->equipoLocal(NULL)
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-09 17:31:21 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'AND j.equipo_id = e.equipo_local_id' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(80): CodeIgniter\Database\BaseConnection->query('SELECT a.id_jugador, j.nombre AS nombre_jugador, a.titular FROM alineacion a INNER JOIN jugadores j ON a.id_jugador = j.id_jugador INNER JOIN enfrentamientos e ON a.id_partido = e.id_partido WHERE a.id_partido =  AND j.equipo_id = e.equipo_local_id;')
+ 2 APPPATH\Controllers\Home.php(575): App\Models\MiModelo->equipoLocal(null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-09 17:31:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:32:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:32:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:32:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:32:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:32:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-09 17:34:18 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 559.
+ 1 APPPATH\Controllers\Home.php(559): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Controllers\\Home.php', 559)
+ 2 APPPATH\Controllers\Home.php(576): App\Controllers\Home->enfrentamiento()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-09 17:37:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:37:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-09 17:37:30 --> Undefined variable $idPartido
+in APPPATH\Views\enfrentamiento.php on line 75.
+ 1 APPPATH\Views\enfrentamiento.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idPartido', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\enfrentamiento.php', 75)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\enfrentamiento.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('enfrentamiento', [], true)
+ 5 APPPATH\Controllers\Home.php(583): view('enfrentamiento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-09 17:37:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:37:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:37:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:37:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:37:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-09 17:37:57 --> Undefined variable $idPartido
+in APPPATH\Views\enfrentamiento.php on line 75.
+ 1 APPPATH\Views\enfrentamiento.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idPartido', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\enfrentamiento.php', 75)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\enfrentamiento.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('enfrentamiento', [], true)
+ 5 APPPATH\Controllers\Home.php(583): view('enfrentamiento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-09 17:40:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:40:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-09 17:40:09 --> Undefined variable $idPartido
+in APPPATH\Views\enfrentamiento.php on line 75.
+ 1 APPPATH\Views\enfrentamiento.php(75): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $idPartido', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\enfrentamiento.php', 75)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\enfrentamiento.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('enfrentamiento', [], true)
+ 5 APPPATH\Controllers\Home.php(584): view('enfrentamiento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-09 17:40:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:40:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:40:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:40:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:40:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:40:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:47:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:47:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:47:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-09 17:47:38 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE alineaci...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE alineaci...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE alineaci...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(466): CodeIgniter\Database\BaseConnection->query('UPDATE alineaci...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(578): App\Models\MiModelo->realizarCambio('2', NULL, NULL)
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-09 17:47:38 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(466): CodeIgniter\Database\BaseConnection->query('UPDATE alineacion SET titular = 0 WHERE id_partido=2 AND id_jugador = ;')
+ 2 APPPATH\Controllers\Home.php(578): App\Models\MiModelo->realizarCambio('2', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-09 17:48:05 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Models\MiModelo.php on line 470.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\models\\MiModelo.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\models\\MiModelo')
+ 3 APPPATH\Controllers\Home.php(558): CodeIgniter\Autoloader\Autoloader->loadClass('App\\models\\MiModelo')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->enfrentamiento()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+CRITICAL - 2024-01-09 17:48:07 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Models\MiModelo.php on line 470.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(291): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\models\\MiModelo.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(269): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\models\\MiModelo')
+ 3 APPPATH\Controllers\Home.php(552): CodeIgniter\Autoloader\Autoloader->loadClass('App\\models\\MiModelo')
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->calendario()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-09 17:48:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:48:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:49:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:49:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:50:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:50:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:50:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:50:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:50:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:50:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:50:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:50:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:50:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:50:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:50:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:50:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:51:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:51:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:51:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:51:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:51:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 17:51:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 18:00:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 18:00:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 18:00:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 18:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 18:57:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 18:57:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 18:57:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 18:58:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 18:58:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 18:58:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 18:58:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 18:58:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 18:59:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 18:59:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 18:59:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 18:59:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 18:59:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-09 18:59:44 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UPDATE alineacion SET titular = 1 WHERE id_partido=1 AND id_jugador = 12' at line 1 in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE alineaci...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE alineaci...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE alineaci...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(466): CodeIgniter\Database\BaseConnection->query('UPDATE alineaci...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(579): App\Models\MiModelo->realizarCambio('1', '1', '12')
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-09 18:59:44 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'UPDATE alineacion SET titular = 1 WHERE id_partido=1 AND id_jugador = 12' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(466): CodeIgniter\Database\BaseConnection->query('UPDATE alineacion SET titular = 0 WHERE id_partido=1 AND id_jugador = 1;UPDATE alineacion SET titular = 1 WHERE id_partido=1 AND id_jugador = 12;')
+ 2 APPPATH\Controllers\Home.php(579): App\Models\MiModelo->realizarCambio('1', '1', '12')
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-09 19:00:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:00:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:00:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:00:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:00:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:01:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:01:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:01:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:01:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:02:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:02:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:02:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:02:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:02:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:02:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:02:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:03:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:03:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:13:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:13:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:13:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:13:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:14:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:14:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:15:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-09 19:15:35 --> syntax error, unexpected token "}", expecting "," or ";"
+in APPPATH\Views\enfrentamiento.php on line 69.
+ 1 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 2 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('enfrentamiento', [], true)
+ 3 APPPATH\Controllers\Home.php(588): view('enfrentamiento', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-09 19:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:15:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:15:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:15:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:16:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:16:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:16:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:16:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:22:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:22:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:22:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:23:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:23:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:23:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:24:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:24:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:24:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:25:22 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:25:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:25:28 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:27:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-09 19:27:03 --> count(): Argument #1 ($value) must be of type Countable|array, null given
+in APPPATH\Views\enfrentamiento.php on line 67.
+ 1 SYSTEMPATH\View\View.php(228): include()
+ 2 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('enfrentamiento', [], true)
+ 4 APPPATH\Controllers\Home.php(588): view('enfrentamiento', [...])
+ 5 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+ 6 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 7 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 8 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-09 19:27:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:27:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:51:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-09 19:51:07 --> Undefined variable $subKey
+in APPPATH\Views\enfrentamiento.php on line 102.
+ 1 APPPATH\Views\enfrentamiento.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $subKey', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\enfrentamiento.php', 102)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\enfrentamiento.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('enfrentamiento', [], true)
+ 5 APPPATH\Controllers\Home.php(594): view('enfrentamiento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-09 19:51:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-09 19:51:12 --> Undefined variable $subKey
+in APPPATH\Views\enfrentamiento.php on line 102.
+ 1 APPPATH\Views\enfrentamiento.php(102): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $subKey', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\enfrentamiento.php', 102)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\enfrentamiento.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('enfrentamiento', [], true)
+ 5 APPPATH\Controllers\Home.php(594): view('enfrentamiento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-09 19:51:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:51:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:51:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:52:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:56:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 19:56:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:02:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:03:59 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:04:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:04:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:04:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:04:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:04:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:09:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:14:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:14:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:15:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:15:43 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:15:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:15:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:15:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:15:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:16:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:19:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:19:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-09 20:19:39 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE alineaci...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE alineaci...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE alineaci...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(480): CodeIgniter\Database\BaseConnection->query('UPDATE alineaci...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(584): App\Models\MiModelo->realizarCambio('14', NULL, NULL)
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-09 20:19:39 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(480): CodeIgniter\Database\BaseConnection->query('UPDATE alineacion SET titular = 0 WHERE id_partido=14 AND id_jugador = ;')
+ 2 APPPATH\Controllers\Home.php(584): App\Models\MiModelo->realizarCambio('14', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-09 20:19:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:20:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:20:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-01-09 20:20:55 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE alineaci...', 0)
+#1 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE alineaci...')
+#2 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE alineaci...')
+#3 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Models\MiModelo.php(480): CodeIgniter\Database\BaseConnection->query('UPDATE alineaci...')
+#4 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\app\Controllers\Home.php(587): App\Models\MiModelo->realizarCambio('14', NULL, NULL)
+#5 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+#6 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\Users\jorge\OneDrive - Educacyl\DAW2\Desarrollo Web en Entorno Servidor\proyectoASIR\codeigniter\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-09 20:20:55 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(480): CodeIgniter\Database\BaseConnection->query('UPDATE alineacion SET titular = 0 WHERE id_partido=14 AND id_jugador = ;')
+ 2 APPPATH\Controllers\Home.php(587): App\Models\MiModelo->realizarCambio('14', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-09 20:23:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:23:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:23:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:23:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:23:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:23:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:29:01 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:29:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:29:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:34:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:34:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-09 20:34:57 --> Undefined variable $jugadoresLocal
+in APPPATH\Views\enfrentamiento.php on line 77.
+ 1 APPPATH\Views\enfrentamiento.php(77): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $jugadoresLocal', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\enfrentamiento.php', 77)
+ 2 SYSTEMPATH\View\View.php(228): include('C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Views\\enfrentamiento.php')
+ 3 SYSTEMPATH\View\View.php(231): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1190): CodeIgniter\View\View->render('enfrentamiento', [], true)
+ 5 APPPATH\Controllers\Home.php(619): view('enfrentamiento', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->insertarAlineacion()
+ 7 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-09 20:36:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-01-09 20:36:58 --> Undefined array key "id"
+in APPPATH\Controllers\Home.php on line 559.
+ 1 APPPATH\Controllers\Home.php(559): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id"', 'C:\\Users\\jorge\\OneDrive - Educacyl\\DAW2\\Desarrollo Web en Entorno Servidor\\proyectoASIR\\codeigniter\\app\\Controllers\\Home.php', 559)
+ 2 APPPATH\Controllers\Home.php(609): App\Controllers\Home->enfrentamiento()
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->insertarAlineacion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+INFO - 2024-01-09 20:38:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:38:41 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:38:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:39:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:39:13 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:39:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:40:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-01-09 20:40:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

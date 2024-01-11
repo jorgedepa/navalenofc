@@ -1,0 +1,79 @@
+body {
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    background-color: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    height: 60%;
+    max-width: 400px;
+    min-height: 600px;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #333;
+}
+
+input {
+    width: calc(100% - 20px);
+    padding: 15px;
+    margin-bottom: 10px;
+    background-color: #edfff6;
+    color: black;
+    border: none;
+    border-bottom: 1px solid #2dfb98;
+    box-sizing: border-box;
+}
+
+input::placeholder {
+    color: #008f4c;
+}
+
+input:focus {
+    outline: none;
+}
+
+input[type="submit"] {
+    padding: 10px 20px;
+    background: linear-gradient(to right, #e67e22, #d35400);
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s;
+}
+
+input[type="submit"]:hover {
+    background: linear-gradient(to right, #d35400, #e67e22 );
+}
+
+input[type="submit"]:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+}
+
+img {
+    height: 190px;
+    width: 100%;
+    object-fit: contain;
+    flex-shrink: 0;
+    margin-bottom: 50px;
+}

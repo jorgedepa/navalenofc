@@ -1,0 +1,78 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+    background: #203a2f;
+    background: linear-gradient(180deg, #203a2f 8%, #008f4c 83%);
+
+}
+
+h2 {
+    color: white;
+    font-size: 50px;
+    text-align: center;
+    padding: 20px;
+}
+
+#contenedorPlantilla {
+    width: calc(100% - 120px);
+    margin-left: 60px;
+    margin-right: 60px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-column-gap: 20px;
+    grid-row-gap: 40px;
+}
+
+#contenedorPlantilla>a {
+    display: block;
+    background-color: white;
+    height: 500px;
+    border-radius: 25px;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+
+}
+
+#contenedorPlantilla>a:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.4);
+}
+
+.imagenJugador {
+    width: 100%;
+    height: 100%;
+    border-radius: 25px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
+}
+
+.nombre {
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    position: relative;
+    bottom: 100px;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #1a1f2c;
+    color: white;
+}
+
+h4 {
+    margin: 0;
+    text-decoration: none;
+    font-size: 30px;
+
+}
+
+.imagenJugador img {
+    height: 100%;
+    object-fit: cover;
+}

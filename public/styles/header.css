@@ -1,0 +1,96 @@
+header,
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+header {
+    height: 96px;
+    background-color: #005a32;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+#logo,
+#inicioSesion {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 600px;
+    justify-content: flex-start;
+}
+
+#logo img {
+    height: 80%;
+    margin-right: 20px;
+}
+
+#logo h2 {
+    font-size: 22px;
+    color: #fff;
+}
+
+#inicioSesion {
+    width: 300px;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#inicioSesion span {
+    color: white;
+    font-size: 18px;
+
+}
+
+#inicioSesion button {
+    cursor: pointer;
+    width: 216px;
+    height: 34px;
+    background: linear-gradient(to right, #e67e22, #d35400);
+    color: white;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+nav {
+    background-color: #0b3d27;
+    height: 37px;
+    position: sticky;
+    top: 0;
+    box-shadow: 0px 10px 18px 0px rgba(0, 0, 0, 0.75);
+    z-index: 500;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+nav li {
+    float: left;
+    margin-right: 40px;
+    color: white;
+    font-weight: 700;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+
+nav li:hover {
+    border-bottom: 2px solid white;
+}

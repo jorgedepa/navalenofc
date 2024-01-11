@@ -1,0 +1,92 @@
+footer {
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    background-color: #133a23;
+    display: flex;
+    justify-content: center;
+
+    padding: 40px;
+
+}
+
+#containerFooter {
+    width: 70%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+}
+
+#patrocinadores {
+    height: 80%;
+    padding: 5px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: 8fr 5fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
+}
+
+#patrocinadores>div {
+    background-image: url(../images/patrocinador.jpg);
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#patrocinadores .div1 {
+    grid-area: 1 / 1 / 2 / 3;
+}
+
+#patrocinadores .div2 {
+    grid-area: 1 / 3 / 2 / 5;
+}
+
+#patrocinadores .div3 {
+    grid-area: 1 / 5 / 2 / 7;
+}
+
+#patrocinadores .div4 {
+    grid-area: 2 / 1 / 3 / 2;
+}
+
+#patrocinadores .div5 {
+    grid-area: 2 / 2 / 3 / 3;
+}
+
+#patrocinadores .div6 {
+    grid-area: 2 / 3 / 3 / 4;
+}
+
+#patrocinadores .div7 {
+    grid-area: 2 / 4 / 3 / 5;
+}
+
+#patrocinadores .div8 {
+    grid-area: 2 / 5 / 3 / 6;
+}
+
+#patrocinadores .div9 {
+    grid-area: 2 / 6 / 3 / 7;
+}
+
+#rrss {
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+
+#rrss a {
+    width: 40px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#rrss a img {
+    max-width: 100%;
+}

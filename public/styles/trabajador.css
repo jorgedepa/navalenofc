@@ -1,0 +1,145 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    width: 100vw;
+    height: 100vh;
+    margin: 0;
+    font-family: 'Montserrat', 'Arial Narrow', Arial, sans-serif;
+}
+
+header {
+    height: 96px;
+    background-color: #005a32;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-left: 60px;
+    padding-right: 60px;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+#logo,
+#inicioSesion {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+#logo {
+    width: 600px;
+    justify-content: flex-start;
+}
+
+#logo img {
+    height: 80%;
+    margin-right: 20px;
+}
+
+#logo h2 {
+    font-size: 22px;
+    color: #fff;
+}
+
+#inicioSesion {
+    width: 300px;
+    justify-content: flex-end;
+    gap: 20px;
+}
+
+#inicioSesion span {
+    color: white;
+    font-size: 18px;
+
+}
+
+#inicioSesion button {
+    cursor: pointer;
+    width: 216px;
+    height: 34px;
+    background: linear-gradient(to right, #e67e22, #d35400);
+    color: white;
+    font-weight: 700;
+    font-family: inherit;
+    font-size: 16px;
+    border-radius: 8px;
+    border: none;
+}
+
+main {
+    width: 100%;
+    height: calc(100% - 96px);
+    background-color: #1a1f2c;
+    display: flex;
+    justify-content: stretch;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+}
+
+#days {
+    width: 30%;
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    height: 30px;
+    font-size: 24px;
+}
+
+#time {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 80px;
+    font-weight: 800;
+}
+
+.today {
+    font-weight: bold;
+}
+
+#date {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-weight: 700;
+}
+
+#contenedorBotones {
+    width: 100%;
+    height: 100px;
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#contenedorBotones form input {
+    margin: 20px;
+    font-size: 16px;
+    background-color: #008F4C;
+    border-radius: 5px;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    width: 150px;
+    cursor: pointer;
+    font-family: 'Montserrat', sans-serif;
+}
+
+select {
+    padding: 10px 20px;
+    width: 150px;
+}
+
+.resumen {
+    margin-top: 50px;
+    font-weight: bold;
+}
