@@ -33,12 +33,12 @@ if (session()->has('nombreUsuario')) {
         </header>
 
         <main>
-            <div id="days">
+            <div id="diasSemana">
                 <span>LU</span> <span>MA</span> <span>MI</span>
                 <span>JU</span><span>VI</span><span>SA</span> <span>DO</span>
             </div>
-            <div id="time"></div>
-            <div id="date">
+            <div id="reloj"></div>
+            <div id="fecha">
                 <?php echo strtoupper(date("d M Y")); ?>
             </div>
 

@@ -1,17 +1,17 @@
-var days = ['DO', 'LU', 'MA', 'MI', 'JU', 'VI', 'SA'];
-var date = new Date();
-var today = days[date.getDay()];
-var p = document.getElementById('days');
-p.innerHTML = p.innerHTML.replace(today, '<span class="today">' + today + '</span>');
+var dias = ['DO', 'LU', 'MA', 'MI', 'JU', 'VI', 'SA'];
+var fechaActual = new Date();
+var diaSemanaActual = dias[fechaActual.getDay()];
+var p = document.getElementById('diasSemana');
+p.innerHTML = p.innerHTML.replace(diaSemanaActual, '<span class="hoy">' + diaSemanaActual + '</span>');
 
 // Función para actualizar la hora
 function updateTime() {
-    var date = new Date();
-    var time = document.getElementById('time');
-    var hours = date.getHours().toString().padStart(2, '0');
-    var minutes = date.getMinutes().toString().padStart(2, '0');
-    var seconds = date.getSeconds().toString().padStart(2, '0');
-    time.innerHTML = hours + ":" + minutes + ":" + seconds;
+    var fechaActual = new Date();
+    var reloj = document.getElementById('reloj');
+    var horas = fechaActual.getHours().toString().padStart(2, '0');
+    var minutos = fechaActual.getMinutes().toString().padStart(2, '0');
+    var segundos = fechaActual.getSeconds().toString().padStart(2, '0');
+    reloj.innerHTML = horas + ":" + minutos + ":" + segundos;
 }
 
 // Actualizar la hora cada segundo

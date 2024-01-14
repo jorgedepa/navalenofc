@@ -199,3 +199,37 @@ in SYSTEMPATH\CodeIgniter.php on line 252.
  1 SYSTEMPATH\CodeIgniter.php(252): CodeIgniter\Exceptions\FrameworkException::forMissingExtension('intl')
  2 SYSTEMPATH\CodeIgniter.php(214): CodeIgniter\CodeIgniter->resolvePlatformExtensions()
  3 FCPATH\index.php(67): CodeIgniter\CodeIgniter->initialize()
+ERROR - 2024-01-11 20:05:57 --> Error connecting to the database: mysqli_sql_exception: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\system\Database\MySQLi\Connection.php:184
+Stack trace:
+#0 C:\xampp\htdocs\system\Database\MySQLi\Connection.php(184): mysqli->real_connect('localhost', 'root', Object(SensitiveParameterValue), 'navalenofc', 3306, '', 0)
+#1 C:\xampp\htdocs\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#2 C:\xampp\htdocs\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#3 C:\xampp\htdocs\app\Models\MiModelo.php(57): CodeIgniter\Database\BaseConnection->query('SELECT * FROM n...')
+#4 C:\xampp\htdocs\app\Controllers\Home.php(13): App\Models\MiModelo->dameTresNoticias()
+#5 C:\xampp\htdocs\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+
+Next CodeIgniter\Database\Exceptions\DatabaseException: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión in C:\xampp\htdocs\system\Database\MySQLi\Connection.php:229
+Stack trace:
+#0 C:\xampp\htdocs\system\Database\BaseConnection.php(392): CodeIgniter\Database\MySQLi\Connection->connect(false)
+#1 C:\xampp\htdocs\system\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+#2 C:\xampp\htdocs\app\Models\MiModelo.php(57): CodeIgniter\Database\BaseConnection->query('SELECT * FROM n...')
+#3 C:\xampp\htdocs\app\Controllers\Home.php(13): App\Models\MiModelo->dameTresNoticias()
+#4 C:\xampp\htdocs\system\CodeIgniter.php(942): App\Controllers\Home->index()
+#5 C:\xampp\htdocs\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#6 C:\xampp\htdocs\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#7 C:\xampp\htdocs\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#8 {main}
+CRITICAL - 2024-01-11 20:05:57 --> Unable to connect to the database.
+Main connection [MySQLi]: No se puede establecer una conexión ya que el equipo de destino denegó expresamente dicha conexión
+in SYSTEMPATH\Database\BaseConnection.php on line 428.
+ 1 SYSTEMPATH\Database\BaseConnection.php(575): CodeIgniter\Database\BaseConnection->initialize()
+ 2 APPPATH\Models\MiModelo.php(57): CodeIgniter\Database\BaseConnection->query('SELECT * FROM noticias ORDER BY fecha_publicacion DESC LIMIT 3;')
+ 3 APPPATH\Controllers\Home.php(13): App\Models\MiModelo->dameTresNoticias()
+ 4 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->index()
+ 5 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()

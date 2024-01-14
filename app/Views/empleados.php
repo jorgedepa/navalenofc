@@ -37,11 +37,6 @@ $dia2 = session()->get('dia2');
             <a href="inicioResponsable">
                 <li>Inicio</li>
             </a>
-            <?php
-            echo '<a href="./pdf/horario.php?dia1=' . urlencode($dia1) . '&dia2=' . urlencode($dia2) . '" target="_blank">';
-            ?>
-            <li>Informe de tiempos</li>
-            </a>
             <a href="empleados">
                 <li>Empleados</li>
             </a>

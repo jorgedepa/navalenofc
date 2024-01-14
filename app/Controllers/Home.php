@@ -4,6 +4,7 @@ namespace App\Controllers;
 
 // Para usar MiModelo
 use App\models\MiModelo;
+require APPPATH . 'Models/MiModelo.php';
 
 class Home extends BaseController
 {

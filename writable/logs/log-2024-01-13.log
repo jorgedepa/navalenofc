@@ -1,0 +1,100 @@
+ERROR - 2024-01-13 17:57:57 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE alineaci...', 0)
+#1 C:\xampp\htdocs\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE alineaci...')
+#2 C:\xampp\htdocs\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE alineaci...')
+#3 C:\xampp\htdocs\app\Models\MiModelo.php(504): CodeIgniter\Database\BaseConnection->query('UPDATE alineaci...')
+#4 C:\xampp\htdocs\app\Controllers\Home.php(591): App\Models\MiModelo->realizarCambio('9', NULL, NULL)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-13 17:57:57 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(504): CodeIgniter\Database\BaseConnection->query('UPDATE alineacion SET titular = 0 WHERE id_partido=9 AND id_jugador = ;')
+ 2 APPPATH\Controllers\Home.php(591): App\Models\MiModelo->realizarCambio('9', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-13 17:58:06 --> mysqli_sql_exception: Duplicate entry '9-12' for key 'PRIMARY' in C:\xampp\htdocs\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\system\Database\MySQLi\Connection.php(306): mysqli->query('INSERT INTO ali...', 0)
+#1 C:\xampp\htdocs\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO ali...')
+#2 C:\xampp\htdocs\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO ali...')
+#3 C:\xampp\htdocs\app\Models\MiModelo.php(521): CodeIgniter\Database\BaseConnection->query('INSERT INTO ali...')
+#4 C:\xampp\htdocs\app\Controllers\Home.php(616): App\Models\MiModelo->insertarAlineacionSuplentes('9', '1', Array)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(942): App\Controllers\Home->insertarAlineacion()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-13 17:58:06 --> Duplicate entry '9-12' for key 'PRIMARY'
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(521): CodeIgniter\Database\BaseConnection->query('INSERT INTO alineacion (id_partido, id_jugador, titular) VALUES (9, 12, 0);')
+ 2 APPPATH\Controllers\Home.php(616): App\Models\MiModelo->insertarAlineacionSuplentes('9', '1', [...])
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->insertarAlineacion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-13 17:58:18 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE alineaci...', 0)
+#1 C:\xampp\htdocs\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE alineaci...')
+#2 C:\xampp\htdocs\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE alineaci...')
+#3 C:\xampp\htdocs\app\Models\MiModelo.php(504): CodeIgniter\Database\BaseConnection->query('UPDATE alineaci...')
+#4 C:\xampp\htdocs\app\Controllers\Home.php(591): App\Models\MiModelo->realizarCambio('9', NULL, NULL)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-13 17:58:18 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(504): CodeIgniter\Database\BaseConnection->query('UPDATE alineacion SET titular = 0 WHERE id_partido=9 AND id_jugador = ;')
+ 2 APPPATH\Controllers\Home.php(591): App\Models\MiModelo->realizarCambio('9', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-13 17:58:31 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE alineaci...', 0)
+#1 C:\xampp\htdocs\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE alineaci...')
+#2 C:\xampp\htdocs\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE alineaci...')
+#3 C:\xampp\htdocs\app\Models\MiModelo.php(504): CodeIgniter\Database\BaseConnection->query('UPDATE alineaci...')
+#4 C:\xampp\htdocs\app\Controllers\Home.php(591): App\Models\MiModelo->realizarCambio('9', NULL, NULL)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-13 17:58:31 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(504): CodeIgniter\Database\BaseConnection->query('UPDATE alineacion SET titular = 0 WHERE id_partido=9 AND id_jugador = ;')
+ 2 APPPATH\Controllers\Home.php(591): App\Models\MiModelo->realizarCambio('9', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ERROR - 2024-01-13 17:58:46 --> mysqli_sql_exception: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1 in C:\xampp\htdocs\system\Database\MySQLi\Connection.php:306
+Stack trace:
+#0 C:\xampp\htdocs\system\Database\MySQLi\Connection.php(306): mysqli->query('UPDATE alineaci...', 0)
+#1 C:\xampp\htdocs\system\Database\BaseConnection.php(693): CodeIgniter\Database\MySQLi\Connection->execute('UPDATE alineaci...')
+#2 C:\xampp\htdocs\system\Database\BaseConnection.php(607): CodeIgniter\Database\BaseConnection->simpleQuery('UPDATE alineaci...')
+#3 C:\xampp\htdocs\app\Models\MiModelo.php(504): CodeIgniter\Database\BaseConnection->query('UPDATE alineaci...')
+#4 C:\xampp\htdocs\app\Controllers\Home.php(591): App\Models\MiModelo->realizarCambio('9', NULL, NULL)
+#5 C:\xampp\htdocs\system\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+#6 C:\xampp\htdocs\system\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#7 C:\xampp\htdocs\system\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#8 C:\xampp\htdocs\public\index.php(79): CodeIgniter\CodeIgniter->run()
+#9 {main}
+CRITICAL - 2024-01-13 17:58:46 --> You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near '' at line 1
+in SYSTEMPATH\Database\BaseConnection.php on line 647.
+ 1 APPPATH\Models\MiModelo.php(504): CodeIgniter\Database\BaseConnection->query('UPDATE alineacion SET titular = 0 WHERE id_partido=9 AND id_jugador = ;')
+ 2 APPPATH\Controllers\Home.php(591): App\Models\MiModelo->realizarCambio('9', null, null)
+ 3 SYSTEMPATH\CodeIgniter.php(942): App\Controllers\Home->actualizarAlineacion()
+ 4 SYSTEMPATH\CodeIgniter.php(502): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 5 SYSTEMPATH\CodeIgniter.php(361): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 6 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
