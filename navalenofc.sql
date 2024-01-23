@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 14-01-2024 a las 22:36:39
+-- Tiempo de generación: 23-01-2024 a las 20:32:16
 -- Versión del servidor: 10.4.32-MariaDB
 -- Versión de PHP: 8.2.12
 
@@ -184,7 +184,7 @@ CREATE DEFINER=`root`@`localhost` FUNCTION `calcular_horas_no_justificadas` (`en
         -- Procesar los registros
         WHILE NOT done DO
             -- Calcular las horas no justificadas
-            IF cur_estado = 'no justificado' OR cur_tipoSalida > 3 THEN
+            IF cur_estado = 'no justificado' OR cur_tipoSalida > 1 THEN
                 SET horas_no_justificadas = horas_no_justificadas + TIMESTAMPDIFF(SECOND, cur_fechaEntrada, cur_fechaSalida) / 3600.0;
             END IF;
             -- Leer el siguiente registro
@@ -227,26 +227,6 @@ CREATE DEFINER=`root`@`localhost` FUNCTION `calcular_horas_semana_justificadas` 
                 IF cur_tipoSalida = 1 THEN
                     SET horas_justificadas = horas_justificadas + TIMESTAMPDIFF(SECOND, cur_fechaEntrada, cur_fechaSalida) / 3600.0;
                 END IF;
-
-                IF cur_tipoSalida IN (2, 3) THEN
-                    -- Calcular el tiempo entre FechaEntrada y FechaSalida del registro con TipoSalida 2
-                    SET horas_justificadas = horas_justificadas + TIMESTAMPDIFF(SECOND, cur_fechaEntrada, cur_fechaSalida) / 3600.0;
-                    
-                    -- Buscar el siguiente registro con TipoSalida 1
-                    SELECT FechaEntrada, TipoSalida
-                    INTO cur_fechaEntrada, cur_tipoSalida
-                    FROM fichaje
-                    WHERE id_usuario = entrada_UsuarioID
-                    AND TipoSalida = 1
-                    AND FechaEntrada > cur_fechaSalida
-                    ORDER BY FechaEntrada
-                    LIMIT 1;
-                    
-                    -- Calcular el tiempo trabajado efectivo
-                    IF cur_fechaEntrada IS NOT NULL AND cur_tipoSalida = 1 THEN
-                        SET horas_justificadas = horas_justificadas + TIMESTAMPDIFF(SECOND, cur_fechaSalida, cur_fechaEntrada) / 3600.0;
-                    END IF;
-                END IF;
             -- Leer el siguiente registro
             FETCH cur INTO cur_fechaEntrada, cur_fechaSalida, cur_tipoSalida, cur_estado;
         END WHILE;
@@ -287,7 +267,7 @@ CREATE DEFINER=`root`@`localhost` FUNCTION `calcular_horas_semana_no_justificada
         -- Procesar los registros
         WHILE NOT done DO
             -- Calcular las horas no justificadas
-            IF cur_estado = 'no justificado' OR cur_tipoSalida > 3 THEN
+            IF cur_estado = 'no justificado' OR cur_tipoSalida > 1 THEN
                 SET horas_no_justificadas = horas_no_justificadas + TIMESTAMPDIFF(SECOND, cur_fechaEntrada, cur_fechaSalida) / 3600.0;
             END IF;
             -- Leer el siguiente registro
@@ -754,7 +734,39 @@ INSERT INTO `alineacion` (`id_partido`, `id_jugador`, `titular`) VALUES
 (9, 93, 0),
 (9, 94, 0),
 (9, 95, 0),
-(9, 96, 0);
+(9, 96, 0),
+(10, 1, 1),
+(10, 2, 1),
+(10, 3, 1),
+(10, 4, 1),
+(10, 5, 1),
+(10, 6, 1),
+(10, 7, 1),
+(10, 8, 1),
+(10, 9, 1),
+(10, 10, 1),
+(10, 11, 1),
+(10, 12, 0),
+(10, 13, 0),
+(10, 14, 0),
+(10, 15, 0),
+(10, 16, 0),
+(10, 81, 1),
+(10, 82, 1),
+(10, 83, 1),
+(10, 84, 1),
+(10, 85, 1),
+(10, 86, 1),
+(10, 87, 1),
+(10, 88, 1),
+(10, 89, 1),
+(10, 90, 1),
+(10, 91, 1),
+(10, 92, 0),
+(10, 93, 0),
+(10, 94, 0),
+(10, 95, 0),
+(10, 96, 0);
 
 -- --------------------------------------------------------
 
@@ -786,7 +798,7 @@ INSERT INTO `enfrentamientos` (`id_partido`, `jornada`, `equipo_local_id`, `equi
 (7, 7, 1, 5, '2023-12-16 18:00:00', 'finalizado', 'X'),
 (8, 8, 5, 1, '2023-12-23 18:00:00', 'finalizado', 'X'),
 (9, 9, 1, 6, '2024-01-13 18:00:00', 'finalizado', 'X'),
-(10, 10, 6, 1, '2024-01-20 18:00:00', 'programado', ''),
+(10, 10, 6, 1, '2024-01-20 18:00:00', 'finalizado', '1'),
 (11, 11, 1, 7, '2024-02-10 18:00:00', 'programado', ''),
 (12, 12, 7, 1, '2024-02-17 18:00:00', 'programado', ''),
 (13, 13, 1, 8, '2024-03-09 18:00:00', 'programado', ''),
@@ -841,6 +853,13 @@ CREATE TABLE `fichaje` (
   `Estado` varchar(20) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
+--
+-- Volcado de datos para la tabla `fichaje`
+--
+
+INSERT INTO `fichaje` (`FichajeID`, `id_usuario`, `FechaEntrada`, `FechaSalida`, `InicioPausa`, `FinPausa`, `TipoSalida`, `Estado`) VALUES
+(111, 2, '2024-01-22 15:50:44', '2024-01-22 20:51:25', NULL, NULL, 1, 'justificado');
+
 -- --------------------------------------------------------
 
 --
@@ -894,7 +913,8 @@ INSERT INTO `goles` (`id_gol`, `id_partido`, `id_jugador`, `id_equipo`, `minuto`
 (32, 5, 7, 1, 55),
 (33, 5, 49, 4, 20),
 (34, 5, 51, 4, 35),
-(35, 5, 53, 4, 50);
+(35, 5, 53, 4, 50),
+(43, 10, 81, 6, 15);
 
 -- --------------------------------------------------------
 
@@ -1334,13 +1354,13 @@ ALTER TABLE `equipos`
 -- AUTO_INCREMENT de la tabla `fichaje`
 --
 ALTER TABLE `fichaje`
-  MODIFY `FichajeID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=111;
+  MODIFY `FichajeID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=115;
 
 --
 -- AUTO_INCREMENT de la tabla `goles`
 --
 ALTER TABLE `goles`
-  MODIFY `id_gol` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=43;
+  MODIFY `id_gol` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=44;
 
 --
 -- AUTO_INCREMENT de la tabla `noticias`
